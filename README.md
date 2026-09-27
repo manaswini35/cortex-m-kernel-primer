@@ -216,12 +216,6 @@ Congratulations!
 
 Now, you can try the "Available commands" above.
 
-Licensing
----------
-`cortex-m-kernel-primer` is freely redistributable under the two-clause
-BSD License. Use of this source code is governed by a BSD-style license
-that can be found in the `LICENSE` file.
-
 Reference
 ---------
 * [mini-arm-os](https://github.com/jserv/mini-arm-os) - the original project this repository is based on
