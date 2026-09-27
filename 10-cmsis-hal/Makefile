@@ -87,7 +87,6 @@ cscope:
 	cscope -Rbqf ./cscope.out
 
 astyle:
-	@echo "More details please see: ../coding-style.txt"
 	astyle --style=linux --indent=tab -p -U -K -H --suffix=none --exclude=cmsis --recursive ./*.c
 	astyle --style=linux --indent=tab -p -U -K -H --suffix=none --exclude=cmsis --recursive ./*.h
 

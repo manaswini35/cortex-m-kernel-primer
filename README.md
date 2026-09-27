@@ -1,13 +1,7 @@
 cortex-m-kernel-primer
 =======================
 
-Build a minimal multi-tasking OS kernel for ARM from scratch, one stage
-at a time.
-
-This is a restructured, reformatted rebuild of the original
-[mini-arm-os](https://github.com/jserv/mini-arm-os) tutorial: the code and
-teaching progression are unchanged, only the folder naming and formatting
-have been cleaned up (see "What changed" below).
+Build a minimal multi-tasking OS kernel for ARM from scratch.
 
 Prerequisites
 -------------
@@ -56,25 +50,6 @@ Change the current working directory to the specified stage and then:
 make
 make qemu
 ```
-
-What changed from mini-arm-os
-------------------------------
-This rebuild is a pure restructuring pass; no logic, register values, or
-behavior were changed. Specifically:
-
-- Stages resequenced 01-10 with descriptive kebab-case names, resolving
-  the original's ambiguous numbering (two folders named `00-*`, and two
-  near-identical `HelloWorld` stages).
-- Reserved-identifier header guards (`__REG_H_`, `__THREADS_H__`, etc.)
-  renamed to non-reserved forms (`REG_H`, `THREADS_H`, ...) per the C
-  standard's reserved-namespace rules.
-- Empty-parameter-list function signatures (`void foo()`) normalized to
-  `void foo(void)`.
-- Inconsistent whitespace fixed throughout: missing spaces after casts,
-  stray double-space padding, mixed space/tab indentation in one linker
-  script, and accidental multi-blank-line runs.
-- Each stage now has its own short README describing what it demonstrates
-  and how to build/run it.
 
 Guide to Hacking 10-cmsis-hal
 ==============================
@@ -244,11 +219,10 @@ Now, you can try the "Available commands" above.
 Licensing
 ---------
 `cortex-m-kernel-primer` is freely redistributable under the two-clause
-BSD License, carried over unchanged from the original mini-arm-os project.
-Use of this source code is governed by a BSD-style license that can be
-found in the `LICENSE` file.
+BSD License. Use of this source code is governed by a BSD-style license
+that can be found in the `LICENSE` file.
 
 Reference
 ---------
-* [mini-arm-os](https://github.com/jserv/mini-arm-os) - the original project this is restructured from
+* [mini-arm-os](https://github.com/jserv/mini-arm-os) - the original project this repository is based on
 * [Baking Pi – Operating Systems Development](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/)
